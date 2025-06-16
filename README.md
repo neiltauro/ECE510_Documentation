@@ -72,7 +72,48 @@
 - 🔗 [C12_Frozen_Lake](https://github.com/neiltauro/HW_for_AI_Challenge12_FrozenLake.git)  
 #### Summary  
 - Started implementing the pure software baseline.  
-- Selected `cocotb` as the testbench framework.  
+- Selected `cocotb` as the testbench framework.
+
+### Challenge #13 — Benchmarking SAXPY with CUDA
+#### GitHub Repository
+- 🔗 [CUDA-SAXPY-Benchmark](https://github.com/neiltauro/HW_for_AI_Challange_13)
+
+#### Summary
+- Implemented **SAXPY kernel with CUDA** to perform `Y = a * X + Y` efficiently on the GPU.
+- Measured execution time for vector sizes from 2^15 to 2^25.
+- Visualized execution time growth with `matplotlib`.
+- Analyzed performance bottlenecks related to memory transfer and kernel execution.
+- Concludes that **global memory transfer dominates latency** and GPU efficiently handles large workloads due to its massive parallelism.
+
+### Challenge #14 — Fibonacci Sequence in CUDA
+#### GitHub Repository
+- 🔗 [CUDA-Fibonacci-Sequence](https://github.com/neiltauro/HW_for_AI_Challange_14)
+
+#### Summary
+- Implemented **Fibonacci number generation** in CUDA alongside a sequential CPU version for comparison.
+- Measured execution time for large N (up to 2^20).
+- Visualized the performance comparison in a plot.
+- Highlights the GPU’s ability to compute many elements in parallel, outperforming the CPU for large workloads.
+
+### Challenge #17 — Sorting on a Systolic Array
+#### GitHub Repository
+- 🔗 [Sorting-Systolic-Array](https://github.com/neiltauro/HW_for_AI_Challange_17)
+
+#### Summary
+- Implemented **Bubble Sort using a Systolic Array architecture**.
+- Simulated and evaluated its performance for various array sizes (10, 100, 1000, 10000).
+- Visualized execution time vs array size.
+- Highlights **the O(N²) complexity** and **the opportunity for parallel processing** in specialized hardware.
+
+### Challenge #19 — Implement a Binary LIF Neuron
+#### GitHub Repository
+- 🔗 [Binary-LIF-Neuron](https://github.com/neiltauro/HW_for_AI_Challange_19)
+
+#### Summary
+- Implemented **Leaky Integrate-and-Fire (LIF) Neuron** in Verilog.
+- Verified its functionality under different stimulus conditions with a Verilog testbench.
+- The LIF neuron accumulates inputs, emits a spike upon reaching its threshold, and then resets its potential.
+- Highlights **the fundamentals of neuromorphic computing** and its implementation in digital hardware.
 
 ### Challenge #22 – Exploring Neuromorphic Computing Concepts  
 #### GitHub Repository  
